@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(4, 4, 4);
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ffeb3b;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 100px auto 20px; /* Adjusted to prevent overlap with nav */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Fields */
+input, button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn:hover {
+    background: darkblue;
+}
+
+button {
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* Pet Image Styling */
+.pet-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+/* Table Styles */
+.pet-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pet-table th, .pet-table td {
+    border: 2px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    word-wrap: break-word; /* Ensures text wraps */
+    white-space: normal;   /* Allows multi-line text */
+    max-width: 150px;      /* Adjust to fit container */
+    overflow-wrap: break-word;
+}
+
+.pet-table th {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+}
+
+.pet-table td {
+    background-color: #ae2626;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .pet-table {
+        width: 95%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Adoption History Table */
+.pet-table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pet-table th, .pet-table td {
+    border: 2px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.pet-table th {
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+}
+
+.pet-table td {
+    background-color: #f9f9f9;
+}
+
+.pet-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pet-table {
+        width: 95%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
